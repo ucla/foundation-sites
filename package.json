@@ -3,7 +3,7 @@
   "version": "6.0.6",
   "main": "dist/foundation.js",
   "description": "The most advanced responsive front-end framework in the world.",
-  "author": "ZURB <foundation@zurb.com> (http://foundation.zurb.com)",
+  "author": "Original work by ZURB <foundation@zurb.com> (http://foundation.zurb.com), modified by UCLA",
   "homepage": "http://foundation.zurb.com/sites",
   "scripts": {
     "start": "gulp",
@@ -58,11 +58,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-sites"
+    "url": "https://github.com/ucla/foundation-sites"
   },
   "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
+    "url": "https://github.com/ucla/foundation-sites/issues",
+    "email": "carl@erutan.net"
   },
   "keywords": [
     "handlebars-helper-rel",

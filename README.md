@@ -1,7 +1,5 @@
 # [Foundation for Sites](http://foundation.zurb.com) (v6.0)
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zurb/foundation-sites?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 Foundation is the most advanced responsive front-end framework in the world. Quickly go from prototype to production, building sites or apps that work on any kind of device with Foundation. Includes layout constructs, like a fully customizable, responsive grid, commonly used JavaScript plugins, and full A11Y support.
 
 ## Requirements
@@ -12,16 +10,27 @@ The Sass is compiled using libsass, which requires the GCC to be installed on yo
 
 ## Setup
 
-To get going with Foundation you can:
+To get going with UCLA Branded Foundation, run the following command in a directory/folder of your choice.
 
+`git submodule add https://github.com/ucla/foundation-sites.git /`
 
-  * [Install Yeti Launch](http://foundation.zurb.com/develop/yeti-launch.html): Seriously though, check it out!
-  * [Install the CLI](https://www.npmjs.com/package/foundation-cli): `npm install -g foundation-cli`
-  * [Download the latest release](http://foundation.zurb.com/sites/download.html)
-  * [Install with Bower](http://bower.io): `bower install foundation-sites`
-  * [Install with npm](http://npmjs.com): `npm install foundation-sites`
-  * [Install with Atmosphere for Meteor](https://atmospherejs.com): `meteor add zurb:foundation-sites`
-  * [Install with Composer](https://getcomposer.org/): `php composer.phar require zurb/foundation`
+Which will create a .gitmodules file containing
+
+```
+[submodule "foundation-sites"]
+	path = /
+	url = https://github.com/ucla/foundation-sites.git
+```
+
+### Update
+
+Once installed you can pull down the latest version inside your application by running
+
+`git submodule update --remote foundation-sites`
+
+h3. Further Reading
+
+[Git Tools, Submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules)
 
 ## Documentation
 
@@ -32,7 +41,7 @@ Foundation uses [Gulp](http://gulpjs.com/) and [SuperCollider](https://www.npmjs
 You'll want to clone the Foundation repo first and install all the dependencies. You can do this using the following commands:
 
 ```
-git clone git@github.com:zurb/foundation-sites.git
+git clone git@github.com:ucla/foundation-sites.git
 cd foundation-sites
 npm install
 ```

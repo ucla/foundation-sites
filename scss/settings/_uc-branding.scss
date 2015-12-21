@@ -1,0 +1,52 @@
+/////////////////////////////////////////
+///            UCLA
+/////////////////////////////////////////
+
+// Primary UCLA Colours
+
+$ucla-blue: #3399cc;
+$ucla-blue-safe: #347bad;
+$ucla-gold: #ffe800;
+
+// Secondary UCLA Colours
+
+$ucla-blue-dark: #0055a6;
+$ucla-blue-light: #00a5e5;
+
+// Tertiary UCLA Colours
+
+$ucla-yellow: #ffff00;
+$ucla-green: #00ff87;
+$ucla-pink: #ff00a5;
+$ucla-cyan: #00ffff;
+$ucla-purple: #8237ff;
+$ucla-grey: #666;
+$ucla-orange: #ffb300;
+
+// Semantic Colours
+
+$neutral: #ccc;
+$white: #fff;
+$black: #000;
+
+// Fonts
+
+$font-stack: 'Proxima Nova', Verdana, sans-serif;
+$font-stack-alt: 'Proxima Nova', Verdana, sans-serif;
+$global-letter-spacing: 0.5px;
+
+@font-face {
+	font-family: 'Proxima Nova';src: url('/fonts/ProximaNova-Regular.eot');src: url('/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),url('/fonts/ProximaNova-Regular.woff') format('woff'),url('/fonts/ProximaNova-Reg.otf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';src: url('/fonts/ProximaNova-Semibold.eot');src: url('/fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),url('/fonts/ProximaNova-Semibold.woff') format('woff'),url('/fonts/ProximaNova-Sbold.otf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/////////////////////////////////////////
+///            UCSF
+/////////////////////////////////////////
