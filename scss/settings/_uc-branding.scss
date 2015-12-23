@@ -25,15 +25,16 @@ $ucla-orange: #ffb300;
 
 // Semantic Colours
 
-$neutral: #ccc;
-$white: #fff;
-$black: #000;
+$ucla-neutral: #ccc;
+$ucla-white: #fefefe;
+$ucla-black: #000;
+$ucla-anchor-hover: #1e4b87;
 
 // Fonts
 
-$font-stack: 'Proxima Nova', Verdana, sans-serif;
-$font-stack-alt: 'Proxima Nova', Verdana, sans-serif;
-$global-letter-spacing: 0.5px;
+$ucla-font-stack: 'Proxima Nova', Verdana, sans-serif;
+$ucla-font-stack-alt: 'Proxima Nova', Verdana, sans-serif;
+$ucla-global-letter-spacing: 0.5px;
 
 @font-face {
 	font-family: 'Proxima Nova';src: url('/fonts/ProximaNova-Regular.eot');src: url('/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),url('/fonts/ProximaNova-Regular.woff') format('woff'),url('/fonts/ProximaNova-Reg.otf') format('truetype');
