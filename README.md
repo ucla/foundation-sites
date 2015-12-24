@@ -10,7 +10,13 @@ The Sass is compiled using libsass, which requires the GCC to be installed on yo
 
 ## Setup
 
-To get going with UCLA Branded Foundation, run the following command in a directory/folder of your choice.
+### New Project
+
+We recommend using https://github.com/ucla/foundation-zurb-template for static sites and application prototypes.
+
+### Existing Project
+
+To get going with UCLA Branded Foundation in an existing project, run the following command in a directory/folder of your choice.
 
 `git submodule add https://github.com/ucla/foundation-sites.git /`
 
@@ -22,7 +28,7 @@ Which will create a .gitmodules file containing
 	url = https://github.com/ucla/foundation-sites.git
 ```
 
-### Update
+#### Update
 
 Once installed you can pull down the latest version inside your application by running
 
