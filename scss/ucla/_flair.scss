@@ -1,0 +1,40 @@
+/////////////////////////////////////////
+///           --- OR ---
+/////////////////////////////////////////
+
+@mixin line-thru($background: $white, $text-color: $body-text-color, $lines: $background-light-grey) {
+  display: block;
+  margin: $default-spacing 0;
+  color: $text-color;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  &:before {
+    width: $double-spacing;
+    height: $double-spacing;
+    background-color: $background;
+    content: '';
+    margin: -5px 0 0 -8px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  &:after {
+    border-bottom: 1px solid $lines;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 49%;
+    width: 100%;
+    z-index: -2;
+  }
+}
+
+/////////////////////////////////////////
+///                MISC
+/////////////////////////////////////////
+
+%ucla-box-shadow {
+  box-shadow: 0 1px 1px #347bad;
+}

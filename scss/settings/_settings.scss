@@ -184,9 +184,9 @@ $stat-font-size: 2.5rem;
 
 $abide-inputs: true;
 $abide-labels: true;
-$input-background-invalid: $error-color;
-$form-label-color-invalid: $error-color;
-$input-error-color: $error-color;
+$input-background-invalid: $warning-color;
+$form-label-color-invalid: $warning-color;
+$input-warning-color: $warning-color;
 $input-error-font-size: rem-calc(12);
 $input-error-font-weight: $global-weight-bold;
 $form-valid-color: $success-color;
