@@ -65,3 +65,42 @@
   padding: $half-spacing;
   font-weight: 400;
 }
+
+/////////////////////////////////////////
+///            ERRORS
+/////////////////////////////////////////
+
+%error-base {
+  color: $warning-color;
+	h2, h3, p {
+		color: $warning-color;
+	}
+	p {
+		font-size: $helptext-font-size;
+	}
+	padding: $half-spacing;
+	border-radius: $global-border-radius;
+	text-align: center;
+	margin-top: 0;
+}
+
+.error-box {
+	background: repeating-linear-gradient(45deg, $warning-color-dark, $warning-color-dark $half-spacing, $warning-color-dark-alt $half-spacing, $warning-color-dark-alt $default-spacing);
+	@extend %error-base;
+}
+
+.error-box-solid {
+	background: $warning-color-dark;
+	@extend %error-base;
+}
+
+.error-box-lite {
+  @extend %error-base;
+  text-align: left;
+  padding-left: 0;
+}
+
+.error-title {
+  color: $warning-color;
+}
+
