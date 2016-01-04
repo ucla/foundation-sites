@@ -39,7 +39,7 @@
 //  34. Tooltip
 //  35. Top Bar
 
-@import 'settings/uc-branding';
+@import 'uc/uc-branding';
 @import 'util/util';
 
 // 1. Global
@@ -59,7 +59,7 @@ $warning-color-dark-alt: darken($ucla-pink, 46%);
 $alert-color: $ucla-orange;
 $light-gray: lighten($ucla-neutral, 15%);
 $medium-gray: $ucla-neutral;
-$dark-gray: darken($neutral, 15%);
+$dark-gray: darken($ucla-neutral, 15%);
 $black: $ucla-black;
 $white: $ucla-white;
 $html-background: #d1e8f8 url('../images/skyline.jpg') no-repeat;
@@ -552,4 +552,3 @@ $topbar-padding: 0.5rem;
 $topbar-background: $light-gray;
 $topbar-link-color: $primary-color;
 $topbar-input-width: 200px;
-
