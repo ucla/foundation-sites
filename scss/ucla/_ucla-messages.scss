@@ -1,5 +1,5 @@
 /////////////////////////////////////////
-///        TOP OF PAGE BANNER
+///    ENVIRONMENT FLAG BANNER
 /////////////////////////////////////////
 
 %location-banner-base {
@@ -8,7 +8,7 @@
   width: 100%;
   color: $black;
   text-align: center;
-  @include box-shadow($ucla-grey 1px 1px 5px);
+  box-shadow: $ucla-grey 1px 1px 5px;
 }
 
 .location-banner-dev {
@@ -35,7 +35,7 @@
   }
   position: relative;
   background: $ucla-yellow;
-	box-shadow: 0 1px 1px #347bad;
+	@include %ucla-box-shadow;
 	border-radius: $global-border-radius;
 	padding: 0 7.5% 2.5% ;
 	@include breakpoint($multi-column) {
