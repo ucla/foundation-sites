@@ -6,13 +6,13 @@
 	background: rgba($black, .75);
 	border-top: 1px solid $ucla-blue-light;
 	padding: $global-spacing / 2;
-	color: lighten($body-text-color, 40%);
+	color: lighten($body-font-color, 40%);
 	@include breakpoint(multi-column) {
 		height: $global-spacing * 2;
 	}
 	.ucla-iam-footer-content {
   	margin: 0 auto;
-  	font-size: $helptext-font-size;
+  	font-size: $small-font-size;
 	}
 	a, span {
 		display: block;

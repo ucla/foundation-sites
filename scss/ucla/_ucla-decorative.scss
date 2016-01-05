@@ -2,10 +2,10 @@
 ///           --- OR ---
 /////////////////////////////////////////
 
-@mixin line-thru($background: $white, $text-color: $body-text-color, $lines: $background-light-grey) {
+@mixin line-thru($background: $white, $font-color: $body-font-color, $lines: $background-light-grey) {
   display: block;
   margin: $global-spacing 0;
-  color: $text-color;
+  color: $font-color;
   position: relative;
   text-align: center;
   width: 100%;

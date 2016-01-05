@@ -38,6 +38,7 @@
 //  33. Title Bar
 //  34. Tooltip
 //  35. Top Bar
+//  36. Application Specific
 
 @import 'uc/uc-branding';
 @import 'util/util';
@@ -81,8 +82,8 @@ $global-text-direction: ltr;
 
 $breakpoints: (
   single-column: 0,
-  multi-column: 30rem,
-  wide: 70rem,
+  multi-column: 56rem,
+  wide: 100rem,
 );
 $breakpoint-classes: ();
 
@@ -92,8 +93,8 @@ $breakpoint-classes: ();
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-responsive-gutter: (
-  small: 20px,
-  medium: 30px,
+  single-column: 20px,
+  multi-column: 30px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -106,7 +107,7 @@ $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
-  small: (
+  single-column: (
     'h1': 24,
     'h2': 20,
     'h3': 19,
@@ -114,22 +115,22 @@ $header-sizes: (
     'h5': 17,
     'h6': 16,
   ),
-  medium: (
-    'h1': 48,
-    'h2': 40,
-    'h3': 31,
-    'h4': 25,
+  multi-column: (
+    'h1': 42,
+    'h2': 38,
+    'h3': 26,
+    'h4': 24,
     'h5': 20,
     'h6': 16,
   ),
 );
 $header-color: inherit;
-$header-lineheight: 1.4;
+$header-lineheight: 1.2;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
-$small-font-size: 80%;
+$small-font-size: 81.25%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
+$paragraph-lineheight: 1.5;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
@@ -141,7 +142,7 @@ $code-padding: rem-calc(2 5 1);
 $anchor-color: $ucla-purple;
 $anchor-color-hover: $ucla-anchor-hover;
 $anchor-text-decoration: none;
-$anchor-text-decoration-hover: none;
+$anchor-text-decoration-hover: underline;
 $hr-width: $global-width;
 $hr-border: 1px solid $primary-color-alternate;
 $hr-margin: rem-calc(20) auto;
@@ -550,3 +551,6 @@ $topbar-padding: 0.5rem;
 $topbar-background: $light-gray;
 $topbar-link-color: $primary-color;
 $topbar-input-width: 200px;
+
+// 36. Application Specific
+// ---------
