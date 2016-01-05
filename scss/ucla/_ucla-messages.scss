@@ -36,7 +36,7 @@
   position: relative;
   background: $ucla-yellow;
 	@extend %ucla-box-shadow;
-	border-radius: $global-border-radius;
+	border-radius: $global-radius;
 	padding: 0 7.5% 2.5% ;
 	@include breakpoint($multi-column) {
 		padding: 0 $global-spacing;
@@ -50,7 +50,7 @@
   a {
     color: $warning-color;
   }
-  border-radius: $global-border-radius;
+  border-radius: $global-radius;
   padding: $global-spacing / 2;
   font-weight: 400;
 }
@@ -61,7 +61,7 @@
   a {
     color: $success-color;
   }
-  border-radius: $global-border-radius;
+  border-radius: $global-radius;
   padding: $global-spacing / 2;
   font-weight: 400;
 }
@@ -79,7 +79,7 @@
 		font-size: $helptext-font-size;
 	}
 	padding: $global-spacing / 2;
-	border-radius: $global-border-radius;
+	border-radius: $global-radius;
 	text-align: center;
 	margin-top: 0;
 }
