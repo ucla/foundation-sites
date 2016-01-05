@@ -18,23 +18,24 @@ We recommend using https://github.com/ucla/foundation-zurb-template for static s
 
 To get going with UCLA Branded Foundation in an existing project, run the following command in a directory/folder of your choice.
 
-`git submodule add https://github.com/ucla/foundation-sites.git /`
+`git submodule add -b develop -f https://github.com/ucla/foundation-sites.git bower_components/foundation-sites`
 
 Which will create a .gitmodules file containing
 
 ```
-[submodule "foundation-sites"]
-	path = /
+[submodule "bower_components/foundation-sites"]
+	path = bower_components/foundation-sites
 	url = https://github.com/ucla/foundation-sites.git
+	branch = develop
 ```
 
-#### Update
+### Update
 
 Once installed you can pull down the latest version inside your application by running
 
 `git submodule update --remote foundation-sites`
 
-h3. Further Reading
+### Further Reading
 
 [Git Tools, Submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules)
 
