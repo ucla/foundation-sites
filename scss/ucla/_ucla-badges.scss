@@ -35,7 +35,7 @@
   width: $base-size * 2.5;
   height: $base-size * 2;
   background: $background;
-  @include breakpoint($grid-liquid) {
+  @include breakpoint(multi-column) {
     top: -$global-spacing * 3;
     right: -$global-spacing * 2;
   }

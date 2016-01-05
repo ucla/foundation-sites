@@ -7,7 +7,7 @@
 	border-top: 1px solid $ucla-blue-light;
 	padding: $global-spacing / 2;
 	color: lighten($body-text-color, 40%);
-	@include breakpoint($multi-column) {
+	@include breakpoint(multi-column) {
 		height: $global-spacing * 2;
 	}
 	.ucla-iam-footer-content {
@@ -17,7 +17,7 @@
 	a, span {
 		display: block;
 		width: 100%;
-		@include breakpoint($multi-column) {
+		@include breakpoint(multi-column) {
 			display: inline;
 			width: auto;
 		}
