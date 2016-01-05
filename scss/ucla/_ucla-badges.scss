@@ -12,13 +12,13 @@
   content:attr(data-count);
   position: absolute;
   background: $ucla-pink;
-  height: $double-spacing;
-  top: -$half-spacing;
-  right: -$default-spacing;
-  width: $double-spacing;
+  height: $global-spacing * 2;
+  top: -$global-spacing / 2;
+  right: -$global-spacing;
+  width: $global-spacing * 2;
   text-align: center;
-  line-height: $double-spacing;
-  font-size: $default-spacing;
+  line-height: $global-spacing * 2;
+  font-size: $global-spacing;
   border-radius: 50%;
   color: $white;
   border: 1px solid $ucla-pink;
@@ -28,16 +28,16 @@
 ///        ICON CONTAINER BADGE
 /////////////////////////////////////////
 
-@mixin badge($background: $warning-color, $color: $warning-color-dark, $base-size: ($default-spacing * 2.5)) {
+@mixin badge($background: $warning-color, $color: $warning-color-dark, $base-size: ($global-spacing * 2.5)) {
   position: absolute;
-  bottom: -$triple-spacing * 1.5;
-  right: $double-spacing;
+  bottom: -$global-spacing * 4.5;
+  right: $global-spacing * 2;
   width: $base-size * 2.5;
   height: $base-size * 2;
   background: $background;
   @include breakpoint($grid-liquid) {
-    top: -$triple-spacing;
-    right: -$double-spacing;
+    top: -$global-spacing * 3;
+    right: -$global-spacing * 2;
   }
   &:before {
     content: "";

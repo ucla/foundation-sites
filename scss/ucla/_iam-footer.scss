@@ -2,13 +2,13 @@
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: $quad-spacing;
+	height: $global-spacing * 4;
 	background: rgba($black, .75);
 	border-top: 1px solid $ucla-blue-light;
-	padding: $half-spacing;
+	padding: $global-spacing / 2;
 	color: lighten($body-text-color, 40%);
 	@include breakpoint($multi-column) {
-		height: $double-spacing;
+		height: $global-spacing * 2;
 	}
 	.ucla-iam-footer-content {
   	margin: 0 auto;

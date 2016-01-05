@@ -3,8 +3,8 @@
 // using default webshim classes for clarity
 
 .ws-errorbox {
-  margin-top: -$default-spacing;
-  margin-bottom: $default-spacing;
+  margin-top: -$global-spacing;
+  margin-bottom: $global-spacing;
   p {
     font-family: $font-stack;
     color: $warning-color;

@@ -3,8 +3,8 @@
 /////////////////////////////////////////
 
 %location-banner-base {
-  height: $double-spacing;
-  line-height: $double-spacing;
+  height: $global-spacing * 2;
+  line-height: $global-spacing * 2;
   width: 100%;
   color: $black;
   text-align: center;
@@ -39,19 +39,19 @@
 	border-radius: $global-border-radius;
 	padding: 0 7.5% 2.5% ;
 	@include breakpoint($multi-column) {
-		padding: 0 $default-spacing;
+		padding: 0 $global-spacing;
 	}
-	margin-bottom: $triple-spacing;
+	margin-bottom: $global-spacing * 3;
 }
 
 .message-fail {
-  background: repeating-linear-gradient(45deg, $warning-color-dark, $warning-color-dark $half-spacing, $warning-color-dark-alt $half-spacing, $warning-color-dark-alt $default-spacing);
+  background: repeating-linear-gradient(45deg, $warning-color-dark, $warning-color-dark ($global-spacing / 2), $warning-color-dark-alt ($global-spacing / 2), $warning-color-dark-alt $global-spacing);
   color: $warning-color;
   a {
     color: $warning-color;
   }
   border-radius: $global-border-radius;
-  padding: $half-spacing;
+  padding: $global-spacing / 2;
   font-weight: 400;
 }
 
@@ -62,7 +62,7 @@
     color: $success-color;
   }
   border-radius: $global-border-radius;
-  padding: $half-spacing;
+  padding: $global-spacing / 2;
   font-weight: 400;
 }
 
@@ -78,14 +78,14 @@
 	p {
 		font-size: $helptext-font-size;
 	}
-	padding: $half-spacing;
+	padding: $global-spacing / 2;
 	border-radius: $global-border-radius;
 	text-align: center;
 	margin-top: 0;
 }
 
 .error-box {
-	background: repeating-linear-gradient(45deg, $warning-color-dark, $warning-color-dark $half-spacing, $warning-color-dark-alt $half-spacing, $warning-color-dark-alt $default-spacing);
+	background: repeating-linear-gradient(45deg, $warning-color-dark, $warning-color-dark ($global-spacing / 2), $warning-color-dark-alt ($global-spacing / 2), $warning-color-dark-alt $global-spacing);
 	@extend %error-base;
 }
 
@@ -103,4 +103,3 @@
 .error-title {
   color: $warning-color;
 }
-

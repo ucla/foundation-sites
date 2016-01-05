@@ -4,15 +4,15 @@
 
 @mixin line-thru($background: $white, $text-color: $body-text-color, $lines: $background-light-grey) {
   display: block;
-  margin: $default-spacing 0;
+  margin: $global-spacing 0;
   color: $text-color;
   position: relative;
   text-align: center;
   width: 100%;
   z-index: 1;
   &:before {
-    width: $double-spacing;
-    height: $double-spacing;
+    width: $global-spacing * 2;
+    height: $global-spacing * 2;
     background-color: $background;
     content: '';
     margin: -5px 0 0 -8px;
