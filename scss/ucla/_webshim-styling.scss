@@ -6,9 +6,9 @@
   margin-top: -$global-spacing;
   margin-bottom: $global-spacing;
   p {
-    font-family: $font-stack;
+    font-family: $body-font-family;
     color: $warning-color;
-    font-size: $helptext-font-size;
+    font-size: $small-font-size;
     text-align: left;
   }
 }
