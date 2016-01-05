@@ -24,12 +24,12 @@
 	}
 	a {
 		text-decoration: none;
-		color: $footer-link-color;
+		color: $white;
 		&:visited {
-			color: $footer-link-color;
+			color: $white;
 		}
 		&:hover, &:focus {
-			color: $footer-link-color-hover;
+			color: $ucla-yellow;
 			text-decoration: underline;
 		}
 	}
