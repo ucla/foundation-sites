@@ -1,15 +1,12 @@
 .ucla-iam-footer {
-	@include grid-row();
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	div {
-		height: $global-spacing * 4;
-		background: rgba($black, .75);
-		border-top: 1px solid $ucla-blue-light;
-		padding: $global-spacing / 2;
-		color: lighten($body-font-color, 40%);
-	}
+	height: $global-spacing * 4;
+	background: rgba($black, .75);
+	border-top: 1px solid $ucla-blue-light;
+	padding: $global-spacing / 2;
+	color: lighten($body-font-color, 40%);
 	@include breakpoint(multi-column) {
 		height: $global-spacing * 2;
 	}
