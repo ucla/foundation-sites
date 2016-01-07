@@ -82,7 +82,7 @@ $global-text-direction: ltr;
 
 $breakpoints: (
   single-column: 0,
-  shift-typo: 34rem,
+  large-type: 34rem,
   multi-column: 54rem,
   wide: 120rem,
 );
@@ -116,7 +116,7 @@ $header-sizes: (
     'h5': 17,
     'h6': 16,
   ),
-  shift-typo: (
+  large-type: (
     'h1': 40,
     'h2': 32,
     'h3': 26,
