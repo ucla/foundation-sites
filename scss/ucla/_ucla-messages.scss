@@ -45,10 +45,10 @@
 }
 
 .message-fail {
-  background: repeating-linear-gradient(45deg, $warning-color-dark, $warning-color-dark ($global-spacing / 2), $warning-color-dark-alt ($global-spacing / 2), $warning-color-dark-alt $global-spacing);
-  color: $warning-color;
+  background: repeating-linear-gradient(45deg, $alert-color-dark, $alert-color-dark ($global-spacing / 2), $alert-color-dark-alternate ($global-spacing / 2), $alert-color-dark-alternate $global-spacing);
+  color: $alert-color;
   a {
-    color: $warning-color;
+    color: $alert-color;
   }
   border-radius: $global-radius;
   padding: $global-spacing / 2;
@@ -71,9 +71,9 @@
 /////////////////////////////////////////
 
 %error-base {
-  color: $warning-color;
+  color: $alert-color;
 	h2, h3, p {
-		color: $warning-color;
+		color: $alert-color;
 	}
 	p {
 		font-size: $small-font-size;
@@ -85,12 +85,12 @@
 }
 
 .error-box {
-	background: repeating-linear-gradient(45deg, $warning-color-dark, $warning-color-dark ($global-spacing / 2), $warning-color-dark-alt ($global-spacing / 2), $warning-color-dark-alt $global-spacing);
+	background: repeating-linear-gradient(45deg, $alert-color-dark, $alert-color-dark ($global-spacing / 2), $alert-color-dark-alternate ($global-spacing / 2), $alert-color-dark-alternate $global-spacing);
 	@extend %error-base;
 }
 
 .error-box-solid {
-	background: $warning-color-dark;
+	background: $alert-color-dark;
 	@extend %error-base;
 }
 
@@ -101,5 +101,5 @@
 }
 
 .error-title {
-  color: $warning-color;
+  color: $alert-color;
 }
