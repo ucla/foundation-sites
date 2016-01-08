@@ -2,7 +2,7 @@
 ///      DEEP MAP NESTING KEYS
 /////////////////////////////////////////
 
-https://github.com/sass/sass/issues/1349#issuecomment-50817692
+// https://github.com/sass/sass/issues/1349#issuecomment-50817692
 
 @function list-slice($list, $start, $end: length($list)) {
   @if $start > length($list) {
