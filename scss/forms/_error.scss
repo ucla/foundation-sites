@@ -41,8 +41,8 @@ $input-error-font-weight: $global-weight-bold !default;
   $background: $input-background-invalid
 ) {
   &:not(:focus) {
-    background-color: rgba($background, 0.1);
-    border-color: $background;
+    background-color: $input-background-invalid;
+    border-color: $form-label-color-invalid;
   }
 }
 
