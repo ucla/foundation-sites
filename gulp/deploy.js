@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var filter = require('gulp-filter');
-var minifyCss = require('gulp-minify-css');
+var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var confirm = require('gulp-prompt').confirm;
@@ -11,6 +11,7 @@ var git = require('gitty')(process.cwd() + '/');
 var octophant = require('octophant');
 var sequence = require('run-sequence');
 var inquirer = require('inquirer');
+var exec = require('child_process').execSync;
 
 var VERSIONED_FILES = [
   'bower.json',
@@ -56,16 +57,16 @@ gulp.task('deploy:version', function() {
 
 // Generates compiled CSS and JS files and puts them in the dist/ folder
 gulp.task('deploy:dist', ['sass:foundation', 'javascript:foundation'], function() {
-  var cssFilter = filter(['*.css']);
-  var jsFilter  = filter(['*.js']);
+  var cssFilter = filter(['*.css'], { restore: true });
+  var jsFilter  = filter(['*.js'], { restore: true });
 
   return gulp.src(DIST_FILES)
     .pipe(cssFilter)
       .pipe(gulp.dest('./dist'))
-      .pipe(minifyCss())
+      .pipe(cssnano())
       .pipe(rename({ suffix: '.min' }))
       .pipe(gulp.dest('./dist'))
-    .pipe(cssFilter.restore())
+    .pipe(cssFilter.restore)
     .pipe(jsFilter)
       .pipe(gulp.dest('./dist'))
       .pipe(uglify())
@@ -98,9 +99,9 @@ gulp.task('deploy:settings', function(cb) {
 
 // Writes a commit with the changes to the version numbers
 gulp.task('deploy:commit', function(cb) {
-  git.commitSync('Bump to version ' + NEXT_VERSION, ['-a']);
-  git.tagSync('v' + NEXT_VERSION);
-  git.push('origin', 'develop', '--tags', cb);
+  exec('git commit -am "Bump to version "' + NEXT_VERSION);
+  exec('git tag v' + NEXT_VERSION);
+  exec('git push origin develop --follow-tags');
   cb();
 });
 
@@ -117,9 +118,6 @@ gulp.task('deploy:docs', ['build'], function() {
 
 // The Customizer runs this function to generate files it needs
 gulp.task('deploy:custom', ['sass:foundation', 'javascript:foundation'], function() {
-  var cssFilter = filter(['*.css']);
-  var jsFilter  = filter(['*.js']);
-
   gulp.src('./_build/assets/css/foundation.css')
       .pipe(minifyCss())
       .pipe(rename('foundation.min.css'))

@@ -427,7 +427,7 @@ Using these source ordering classes, you can shift columns around between our br
 
 ### Block Grids
 
-The block grid from Foundation 5 has been merged into the main grid. Add a class of the format `[size]-up-[n]` to change the size of all columns within the row. By default, the max number of columns you can use with block grid are 6.
+The block grid from Foundation 5 has been merged into the main grid. Add a class of the format `[size]-up-[n]` to change the size of all columns within the row. By default, the max number of columns you can use with block grid are 8.
 
 ```html_example
 <div class="row small-up-1 medium-up-2 large-up-4">
@@ -495,6 +495,14 @@ The grid column calculator can also be accessed as a function. This gives you th
 ```scss
 .main-content {
   width: grid-column(1 of 7);
+}
+```
+
+To center a column semantically. Use ´grid-column-position(center);´.
+
+```scss
+.centered-column {
+  @include grid-column-position(center);
 }
 ```
 
