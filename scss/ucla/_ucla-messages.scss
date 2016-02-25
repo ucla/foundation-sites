@@ -35,7 +35,6 @@
   }
   position: relative;
   background: $ucla-yellow;
-	@extend %ucla-box-shadow;
 	border-radius: $global-radius;
 	padding: 0 7.5% 2.5% ;
 	@include breakpoint(multi-column) {
