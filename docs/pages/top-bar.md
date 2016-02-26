@@ -2,6 +2,7 @@
 title: Top Bar
 description: The new top bar is a simpler wrapper around our flexible menu components.
 sass: ./scss/components/_top-bar.scss
+flex: true
 ---
 
 <div class="primary callout">
@@ -12,7 +13,7 @@ sass: ./scss/components/_top-bar.scss
 
 A top bar (`.top-bar`) can have two sections: a left-hand section (`.top-bar-left`) and a right-hand section (`.top-bar-right`). On small screens, these sections stack on top of each other.
 
-In the below example, our top bar includes a [dropdown menu](dropdown-menu.html), along with a text input field and action button.
+In the below example, our top bar includes a [dropdown menu](dropdown-menu.html), along with a text input field and action button. The dropdown menu inherits the background color of the top bar. If you're using the Sass version of Foundation, you can change this with the `$topbar-submenu-background` variable.
 
 ```html_example
 <div class="top-bar">
@@ -51,7 +52,7 @@ You can further divide a top bar into a title area and content area. Use the `.t
   <div class="top-bar-title"></div>
   <div>
     <div class="top-bar-left"></div>
-    <div class="top-bar-left"></div>
+    <div class="top-bar-right"></div>
   </div>
 </div>
 ```
@@ -90,3 +91,9 @@ In the below example, we've combined the above pattern with the Responsive Toggl
   </div>
 </div>
 ```
+
+---
+
+## Sticky Navigation
+
+See the documentation for the [Sticky](sticky.html#sticky-navigation) plugin to see how to easily make a sticky nav bar.
