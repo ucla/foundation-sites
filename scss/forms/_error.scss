@@ -40,7 +40,7 @@ $input-error-font-weight: $global-weight-bold !default;
 /// @param {Number} $background-alpha [0.1] - Transparency level of the background color.
 @mixin form-input-error(
   $background: $input-background-invalid,
-  $background-alpha: 0.1
+  $background-alpha: 0.03
 ) {
   &:not(:focus) {
     background-color: rgba($background, $background-alpha);
