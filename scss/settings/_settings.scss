@@ -47,8 +47,15 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1320);
-$global-lineheight: 1.5;
+$global-width: rem-calc(960);
+$global-lineheight: 1.6;
+$foundation-palette: (
+  primary: $ucla-blue,
+  secondary: $ucla-gold,
+  success: $ucla-green,
+  warning: $ucla-orange,
+  alert: $ucla-pink,
+);
 $primary-color: $ucla-blue;
 $primary-color-safe: $ucla-blue-safe;
 $primary-color-alternate: $ucla-blue-dark;
@@ -58,32 +65,38 @@ $warning-color: $ucla-orange;
 $alert-color: $ucla-pink;
 $alert-color-dark: darken($ucla-pink, 42%);
 $alert-color-dark-alternate: darken($ucla-pink, 46%);
-$lighter-gray: lighten($ucla-neutral, 16%);
-$light-gray: lighten($ucla-neutral, 12%);
+$lighter-gray: #f9f9f9;
+$light-gray: #eee;
 $medium-gray: $ucla-neutral;
-$dark-gray: darken($ucla-neutral, 15%);
+$dark-gray: #333;
 $black: $ucla-black;
 $white: $ucla-white;
-$body-background: #d1e8f8 url('/assets/img/skyline.jpg') no-repeat fixed;
-$body-font-color: #444;
+$off-white: #eaf4fd;
+$body-background: url('../img/skyline.jpg') no-repeat fixed;
+$body-font-color: #555;
 $body-font-family: $ucla-font-stack;
 $body-antialiased: true;
 $global-spacing: 1rem;
 $global-margin: $global-spacing;
 $global-padding: $global-spacing;
 $global-weight-light: 300;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
+$global-weight-normal: 400;
+$global-weight-bold: 600;
 $global-radius: 3px;
 $global-text-direction: ltr;
+$global-flexbox: false;
+$print-transparent-backgrounds: true;
+
+// @include add-foundation-colors;
 
 // 2. Breakpoints
 // --------------
 
 $breakpoints: (
-  single-column: 0,
-  large-type: 34rem,
+  small: 0, // single-column
+  large-type: 34rem, // bump up typography size
   multi-column: 54rem,
+  medium: 54rem, // has to be here, don't like it semantically ;)
   wide: 120rem,
 );
 $breakpoint-classes: ();
@@ -93,9 +106,9 @@ $breakpoint-classes: ();
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-responsive-gutter: (
-  single-column: 24px,
-  multi-column: 36px,
+$grid-column-gutter: (
+  small: 24px,
+  multi-column: 30px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -104,11 +117,11 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-light;
+$header-font-weight: $global-weight-bold;
 $header-font-style: normal;
-$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 $header-sizes: (
-  single-column: (
+  small: (
     'h1': 24,
     'h2': 20,
     'h3': 19,
@@ -117,21 +130,21 @@ $header-sizes: (
     'h6': 16,
   ),
   large-type: (
-    'h1': 40,
-    'h2': 32,
-    'h3': 26,
-    'h4': 22,
-    'h5': 20,
+    'h1': 32,
+    'h2': 24,
+    'h3': 22,
+    'h4': 20,
+    'h5': 18,
     'h6': 16,
   ),
 );
-$header-color: $primary-color;
-$header-lineheight: 1.2;
+$header-color: $dark-gray;
+$header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
-$small-font-size: 81.25%;
+$small-font-size: 81.25%; // 13px for base 16px
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.5;
+$paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
@@ -140,20 +153,20 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $ucla-purple;
-$anchor-color-hover: $ucla-anchor-hover;
+$anchor-color: $ucla-its-link-color;
+$anchor-color-hover: #193747;
 $anchor-text-decoration: none;
-$anchor-text-decoration-hover: underline;
+$anchor-text-decoration-hover: none;
 $hr-width: $global-width;
 $hr-border: 1px solid $primary-color-alternate;
-$hr-margin: rem-calc(20) auto;
+$hr-margin: rem-calc(8) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
 $list-style-type: disc;
 $list-style-position: outside;
-$list-side-margin: 1.25rem;
-$list-nested-side-margin: 1.25rem;
-$defnlist-margin-bottom: 1rem;
+$list-side-margin: $global-spacing;
+$list-nested-side-margin: $global-margin;
+$defnlist-margin-bottom: $global-margin;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
 $blockquote-color: $dark-gray;
@@ -162,8 +175,8 @@ $blockquote-border: 1px solid $medium-gray;
 $cite-font-size: rem-calc(13);
 $cite-color: $dark-gray;
 $keystroke-font: $font-family-monospace;
-$keystroke-color: $black;
-$keystroke-background: $light-gray;
+$keystroke-color: $white;
+$keystroke-background: $black;
 $keystroke-padding: rem-calc(2 4 0);
 $keystroke-radius: $global-radius;
 $abbr-underline: 1px dotted $black;
@@ -187,10 +200,10 @@ $abide-inputs: true;
 $abide-labels: true;
 $input-background-invalid: $alert-color;
 $form-label-color-invalid: $alert-color;
-$input-warning-color: $warning-color;
-$input-error-font-size: rem-calc(12);
+$input-error-color: $alert-color;
+$input-error-font-size: rem-calc(13);
 $input-error-font-weight: $global-weight-bold;
-$form-valid-color: $success-color;
+$form-valid-color: lighten($success-color, 48%);
 
 // 7. Accordion
 // ------------
@@ -235,16 +248,16 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: .75rem $global-padding;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: #fff;
-$button-color-alt: #000;
+$button-background: transparent;
+$button-background-hover: $ucla-its-primary-button-color;
+$button-color: $anchor-color;
+$button-color-alt: $anchor-color;
 $button-radius: $global-radius;
 $button-sizes: (
-  single-column: 0.6rem,
+  small: 0.6rem,
   multi-column: 0.9rem,
   wide: 1.25rem,
 );
@@ -299,7 +312,7 @@ $dropdown-font-size: 1rem;
 $dropdown-width: 300px;
 $dropdown-radius: $global-radius;
 $dropdown-sizes: (
-  single-column: 100px,
+  small: 100px,
   multi-column: 200px,
   wide: 400px,
 );
@@ -327,33 +340,34 @@ $fieldset-border: 1px solid $medium-gray;
 $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
-$form-spacing: rem-calc(16);
-$helptext-color: #333;
+$form-spacing: rem-calc($global-spacing);
+$helptext-color: $dark-gray;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
 $input-prefix-color: $black;
 $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $medium-gray;
 $input-prefix-padding: 1rem;
-$form-label-color: $black;
-$form-label-font-size: rem-calc(14);
-$form-label-font-weight: $global-weight-normal;
+$form-label-color: $body-font-color;
+$form-label-font-size: rem-calc(13);
+$form-label-font-weight: $global-weight-bold;
 $form-label-line-height: 1.8;
 $select-background: $white;
 $select-triangle-color: #333;
 $select-radius: $global-radius;
 $input-color: $black;
+$input-placeholder-color: $medium-gray;
 $input-font-family: inherit;
 $input-font-size: rem-calc(16);
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
 $input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid $dark-gray;
+$input-border-focus: 1px solid $primary-color;
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
-$input-shadow-focus: 0 0 5px $medium-gray;
+$input-shadow-focus: 0 0 5px lighten($primary-color, 20%);
 $input-cursor-disabled: default;
-$input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+$input-transition: box-shadow 0.1s, border-color 0.3s ease-in-out;
 $input-number-spinners: true;
 $input-radius: $global-radius;
 
@@ -378,9 +392,10 @@ $mediaobject-image-width-stacked: 100%;
 
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
-$menu-item-padding: 0.7rem 1rem;
+$menu-item-padding: 0.7rem 0;
 $menu-icon-spacing: 0.25rem;
-$menu-expand-max: 6;
+$menu-item-color-active: $black;
+$menu-item-background-active: $primary-color;
 
 // 23. Off-canvas
 // --------------
@@ -502,7 +517,6 @@ $show-header-for-stacked: false;
 $tab-margin: 0;
 $tab-background: $white;
 $tab-background-active: $light-gray;
-$tab-border: $light-gray;
 $tab-item-color: foreground($tab-background, $primary-color);
 $tab-item-background-hover: $white;
 $tab-item-padding: 1.25rem 1.5rem;
@@ -544,7 +558,6 @@ $tooltip-padding: 0.75rem;
 $tooltip-font-size: $small-font-size;
 $tooltip-pip-width: 0.75rem;
 $tooltip-pip-height: $tooltip-pip-width * 0.866;
-$tooltip-pip-offset: 1.25rem;
 $tooltip-radius: $global-radius;
 
 // 35. Top Bar
@@ -552,11 +565,12 @@ $tooltip-radius: $global-radius;
 
 $topbar-padding: 0.5rem;
 $topbar-background: $light-gray;
+$topbar-submenu-background: $topbar-background;
+$topbar-unstack-breakpoint: large-type;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 
 // 36. Application Specific
 // ---------
 
-$card-radius: 8px;
 $global-letter-spacing: 0.5px;
