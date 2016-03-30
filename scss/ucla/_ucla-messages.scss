@@ -18,13 +18,19 @@
 	margin-bottom: $global-spacing * 3;
 }
 
-.alert-info p {
-  border-left: 5px solid $ucla-blue;
-  background: $off-white;
-  padding: $global-padding / 2;
-  padding-left: $global-padding;
-  font-size: $small-font-size;
+.alert-info {
+  i {
+    background: $ucla-blue;
+    border-radius: 50%;
+    content: "i";
+    font-weight: $global-weight-bold;
+  }
   p {
+    border-left: 5px solid $ucla-blue;
+    background: $off-white;
+    padding: $global-padding / 2;
+    padding-left: $global-padding * 4;
+    font-size: $small-font-size;
     margin-bottom: 0;
   }
 }
