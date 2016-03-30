@@ -1,0 +1,38 @@
+
+/////////////////////////////////////////
+///            ERRORS
+/////////////////////////////////////////
+
+%error-base {
+  color: $alert-color;
+	h2, h3, p {
+		color: $alert-color;
+	}
+	p {
+		font-size: $small-font-size;
+	}
+	padding: $global-spacing / 2;
+	border-radius: $global-radius;
+	text-align: center;
+	margin-top: 0;
+}
+
+.error-box {
+	background: repeating-linear-gradient(45deg, $alert-color-dark, $alert-color-dark ($global-spacing / 2), $alert-color-dark-alternate ($global-spacing / 2), $alert-color-dark-alternate $global-spacing);
+	@extend %error-base;
+}
+
+.error-box-solid {
+	background: $alert-color-dark;
+	@extend %error-base;
+}
+
+.error-box-lite {
+  @extend %error-base;
+  text-align: left;
+  padding-left: 0;
+}
+
+.error-title {
+  color: $alert-color;
+}

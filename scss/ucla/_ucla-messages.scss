@@ -1,29 +1,4 @@
 /////////////////////////////////////////
-///    ENVIRONMENT FLAG BANNER
-/////////////////////////////////////////
-
-%location-banner-base {
-  height: $global-spacing * 2;
-  line-height: $global-spacing * 2;
-  width: 100%;
-  color: $black;
-  text-align: center;
-  box-shadow: $ucla-grey 1px 1px 5px;
-}
-
-.location-banner-dev {
-  @extend %location-banner-base;
-  background: $ucla-yellow;
-  border-bottom: 1px solid darken($ucla-yellow, 20%);
-}
-
-.location-banner-qa {
-  @extend %location-banner-base;
-  background: $ucla-orange;
-  border-bottom: 1px solid darken($ucla-orange, 20%);
-}
-
-/////////////////////////////////////////
 ///             MESSAGES
 /////////////////////////////////////////
 
@@ -43,62 +18,13 @@
 	margin-bottom: $global-spacing * 3;
 }
 
-.message-fail {
-  background: repeating-linear-gradient(45deg, $alert-color-dark, $alert-color-dark ($global-spacing / 2), $alert-color-dark-alternate ($global-spacing / 2), $alert-color-dark-alternate $global-spacing);
-  color: $alert-color;
-  a {
-    color: $alert-color;
+.alert-info p {
+  border-left: 5px solid $ucla-blue;
+  background: $off-white;
+  padding: $global-padding / 2;
+  padding-left: $global-padding;
+  font-size: $small-font-size;
+  p {
+    margin-bottom: 0;
   }
-  border-radius: $global-radius;
-  padding: $global-spacing / 2;
-  font-weight: 400;
-}
-
-.message-success {
-  background: $ucla-grey;
-  color: $success-color;
-  a {
-    color: $success-color;
-  }
-  border-radius: $global-radius;
-  padding: $global-spacing / 2;
-  font-weight: 400;
-}
-
-/////////////////////////////////////////
-///            ERRORS
-/////////////////////////////////////////
-
-%error-base {
-  color: $alert-color;
-	h2, h3, p {
-		color: $alert-color;
-	}
-	p {
-		font-size: $small-font-size;
-	}
-	padding: $global-spacing / 2;
-	border-radius: $global-radius;
-	text-align: center;
-	margin-top: 0;
-}
-
-.error-box {
-	background: repeating-linear-gradient(45deg, $alert-color-dark, $alert-color-dark ($global-spacing / 2), $alert-color-dark-alternate ($global-spacing / 2), $alert-color-dark-alternate $global-spacing);
-	@extend %error-base;
-}
-
-.error-box-solid {
-	background: $alert-color-dark;
-	@extend %error-base;
-}
-
-.error-box-lite {
-  @extend %error-base;
-  text-align: left;
-  padding-left: 0;
-}
-
-.error-title {
-  color: $alert-color;
 }

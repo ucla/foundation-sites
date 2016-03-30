@@ -1,0 +1,50 @@
+/////////////////////////////////////////
+///    ENVIRONMENT FLAG BANNER
+/////////////////////////////////////////
+
+%location-banner-base {
+  height: $global-spacing * 2;
+  line-height: $global-spacing * 2;
+  width: 100%;
+  color: $black;
+  text-align: center;
+  box-shadow: $ucla-grey 1px 1px 5px;
+}
+
+.location-banner-dev {
+  @extend %location-banner-base;
+  background: $ucla-yellow;
+  border-bottom: 1px solid darken($ucla-yellow, 20%);
+}
+
+.location-banner-qa {
+  @extend %location-banner-base;
+  background: $ucla-orange;
+  border-bottom: 1px solid darken($ucla-orange, 20%);
+}
+
+/////////////////////////////////////////
+///      FAUX ACTION NAVIGATION
+/////////////////////////////////////////
+
+.message-fail {
+  background: repeating-linear-gradient(45deg, $alert-color-dark, $alert-color-dark ($global-spacing / 2), $alert-color-dark-alternate ($global-spacing / 2), $alert-color-dark-alternate $global-spacing);
+  color: $alert-color;
+  a {
+    color: $alert-color;
+  }
+  border-radius: $global-radius;
+  padding: $global-spacing / 2;
+  font-weight: 400;
+}
+
+.message-success {
+  background: $ucla-grey;
+  color: $success-color;
+  a {
+    color: $success-color;
+  }
+  border-radius: $global-radius;
+  padding: $global-spacing / 2;
+  font-weight: 400;
+}
