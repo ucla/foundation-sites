@@ -41,5 +41,6 @@
     padding-left: $global-padding * 4;
     font-size: $small-font-size;
     margin-bottom: $global-margin;
+    min-height: $global-spacing * 3.5;
   }
 }
