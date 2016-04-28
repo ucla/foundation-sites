@@ -10,6 +10,7 @@
   text-align: center;
   width: 100%;
   z-index: 1;
+  @include clearfix;
   &:before {
     width: $global-spacing * 2;
     height: $global-spacing * 2;
