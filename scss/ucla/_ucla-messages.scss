@@ -4,18 +4,18 @@
 
 .breaking-news {
   h1 {
-    color: $ucla-blue-dark;
     text-shadow: 1px 1px 0px $white;
     font-style: italic;
   }
   position: relative;
-  background: $ucla-yellow;
+  background: $ucla-gold;
+  color: $ucla-its-link-color-hover;
 	border-radius: $global-radius;
 	padding: 0 7.5% 2.5% ;
 	@include breakpoint(multi-column) {
-		padding: 0 $global-spacing;
+		padding: $global-spacing / 2;
 	}
-	margin-bottom: $global-spacing * 3;
+	margin-bottom: $global-spacing * 2;
 }
 
 .alert-info {
