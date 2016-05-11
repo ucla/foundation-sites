@@ -4,7 +4,10 @@
 
 // display like it's a header
 legend {
-  font-size: rem-calc(nested-map-get($header-sizes, large-type, h1));
+  font-size: rem-calc(nested-map-get($header-sizes, small, h1));
+  @include breakpoint(multi-column) {
+    font-size: rem-calc(nested-map-get($header-sizes, large-type, h1));
+}
   margin-bottom: $global-margin;
   display: block;
   width: 100%;
@@ -26,6 +29,10 @@ button[disabled] {
 // no CSS output for Foundation buttons component :)
 button, .button {
   @include button();
+  width: 100%;
+  @include breakpoint(multi-column) {
+    width: auto;
+  }
   border: 1px solid $medium-gray;
   text-transform: uppercase;
   font-weight: $global-weight-bold;
