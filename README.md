@@ -1,4 +1,4 @@
-# [Foundation for Sites](http://foundation.zurb.com) (v6.1)
+# [Foundation for Sites](http://foundation.zurb.com)
 
 Foundation is the most advanced responsive front-end framework in the world. Quickly go from prototype to production, building sites or apps that work on any kind of device with Foundation. Includes layout constructs, like a fully customizable, responsive grid, commonly used JavaScript plugins, and full A11Y support.
 
@@ -29,6 +29,16 @@ Which will create a .gitmodules file containing
 	branch = develop
 ```
 
+## Testing
+
+Foundation has three kinds of tests: JavaScript, Sass, and visual regression. Refer to our [testing guide](https://github.com/zurb/foundation-sites/wiki/Testing-Guide) for more details.
+
+These commands will run the various tests:
+
+- `npm run test:sass`
+- `npm run test:javascript`
+- `npm run test:visual`
+
 ### Update
 
 Once installed you can pull down the latest version inside your application by running
@@ -41,7 +51,7 @@ Once installed you can pull down the latest version inside your application by r
 
 ## Documentation
 
-Foundation uses [Gulp](http://gulpjs.com/) and [SuperCollider](https://www.npmjs.com/package/supercollider) to generate its [documentation pages](http://foundation.zurb.com/sites/docs). Documentation can also be run from your local computer:
+Foundation uses [Gulp](http://gulpjs.com/) and [SuperCollider](https://www.npmjs.com/package/supercollider) to generate its [documentation pages](http://foundation.zurb.com/sites/docs). Documentation can also be run from your local computer. 
 
 ### View documentation locally
 
@@ -63,5 +73,3 @@ foundation/
 ├── docs/
 │   └── ...
 ```
-
-Copyright (c) 2016 ZURB, inc.
