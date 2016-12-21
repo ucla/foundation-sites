@@ -4,6 +4,7 @@
 //  Table of Contents:
 //
 //   1. Global
+//   1.5 Application Specific
 //   2. Breakpoints
 //   3. The Grid
 //   4. Base Typography
@@ -40,7 +41,6 @@
 //  35. Title Bar
 //  36. Tooltip
 //  37. Top Bar
-//  38. Application Specific
 
 @import 'uc/uc-branding';
 @import 'util/util';
@@ -49,7 +49,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(960);
+$global-width: rem-calc(1200);
 $global-lineheight: 1.6;
 $foundation-palette: (
   primary: $ucla-blue,
@@ -91,6 +91,13 @@ $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
 
+// 1.5 Application Specific
+// ---------
+
+$global-letter-spacing: 0.5px;
+$nav-background: rgba($black, .65);
+$nav-background-alt: rgba($black, .8);
+
 // 2. Breakpoints
 // --------------
 
@@ -101,7 +108,7 @@ $breakpoints: (
   medium: 54rem, // has to be here, dislike it semantically ;)
   wide: 120rem,
 );
-$print-breakpoint: large;
+$print-breakpoint: large-type;
 $breakpoint-classes: ();
 
 // 3. The Grid
@@ -110,8 +117,8 @@ $breakpoint-classes: ();
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 20px,
-  multi-column: 30px,
+  small: 1.25rem,
+  multi-column: 2rem,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -150,7 +157,7 @@ $header-small-font-color: $dark-gray;
 $paragraph-lineheight: 1.6;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
-$code-color: $black;
+$code-color: $ucla-blue-old-dark;
 $code-font-family: $font-family-monospace;
 $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
@@ -605,7 +612,7 @@ $thumbnail-radius: $global-radius;
 // 35. Title Bar
 // -------------
 
-$titlebar-background: $black;
+$titlebar-background: $nav-background-alt;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
@@ -630,13 +637,8 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
-$topbar-submenu-background: $topbar-background;
+$topbar-background: transparent;
+$topbar-submenu-background: $nav-background-alt;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: large-type;
-
-// 36. Application Specific
-// ---------
-
-$global-letter-spacing: 0.5px;
