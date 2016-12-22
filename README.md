@@ -1,10 +1,8 @@
-# [Foundation for Sites](http://foundation.zurb.com)
-
-Foundation is the most advanced responsive front-end framework in the world. Quickly go from prototype to production, building sites or apps that work on any kind of device with Foundation. Includes layout constructs, like a fully customizable, responsive grid, commonly used JavaScript plugins, and full A11Y support.
+# [Foundation for Sites - Forked](http://foundation.zurb.com)
 
 ## Requirements
 
-Requires NodeJS to be installed on your machine. Works with version 0.12 and higher!
+Requires NodeJS to be installed on your machine. Works with version 4 and higher!
 
 The Sass is compiled using libsass, which requires the GCC to be installed on your machine. Windows users can install it through [MinGW](http://www.mingw.org/), and Mac users can install it through the [Xcode Command-line Tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/).
 
@@ -39,7 +37,7 @@ These commands will run the various tests:
 - `npm run test:javascript`
 - `npm run test:visual`
 
-### Update
+## Update
 
 Once installed you can pull down the latest version inside your application by running
 
@@ -51,7 +49,7 @@ Once installed you can pull down the latest version inside your application by r
 
 ## Documentation
 
-Foundation uses [Gulp](http://gulpjs.com/) and [SuperCollider](https://www.npmjs.com/package/supercollider) to generate its [documentation pages](http://foundation.zurb.com/sites/docs). Documentation can also be run from your local computer. 
+Foundation uses [Gulp](http://gulpjs.com/) and [SuperCollider](https://www.npmjs.com/package/supercollider) to generate its [documentation pages](http://foundation.zurb.com/sites/docs). Documentation can also be run from your local computer.
 
 ### View documentation locally
 
