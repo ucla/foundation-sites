@@ -4,9 +4,9 @@
 
 // display like it's a header
 legend {
-  font-size: rem-calc(nested-map-get($header-sizes, small, h1));
+  font-size: rem-calc(nested-map-get($header-sizes, small, font-size, h1));
   @include breakpoint(multi-column) {
-    font-size: rem-calc(nested-map-get($header-sizes, large-type, h1));
+    font-size: rem-calc(nested-map-get($header-sizes, large-type, font-size, h1));
 }
   margin-bottom: $global-margin;
   display: block;
