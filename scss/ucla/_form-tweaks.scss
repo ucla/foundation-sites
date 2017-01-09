@@ -4,9 +4,9 @@
 
 // display like it's a header
 legend {
-  font-size: rem-calc(map-deep-get($header-styles, small, font-size, h1));
+  font-size: rem-calc(map-deep-get($header-styles, small, h1, font-size));
   @include breakpoint(multi-column) {
-    font-size: rem-calc(map-deep-get($header-styles, large-type, font-size, h1));
+    font-size: rem-calc(map-deep-get($header-styles, large-type, h1, font-size));
 }
   margin-bottom: $global-margin;
   display: block;
