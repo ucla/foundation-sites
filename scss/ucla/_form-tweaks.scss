@@ -30,10 +30,11 @@ button[disabled] {
 button, .button {
   @include button();
   width: 100%;
+  font-size: .875rem;
   @include breakpoint(multi-column) {
     width: auto;
   }
-  border: 1px solid $medium-gray;
+  border: 1px solid $ucla-its-primary-button-color;
   text-transform: uppercase;
   font-weight: $global-weight-bold;
   &:hover {
@@ -56,7 +57,7 @@ button, .button {
 .cancel-button {
   color: $alert-color;
   &:hover {
-    background-color: mix($alert-color, $white, 80%);
+    background-color: $alert-color;
     color: $white;
   }
 }
