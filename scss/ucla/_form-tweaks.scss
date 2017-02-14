@@ -26,7 +26,8 @@ button[disabled] {
   @include button-disabled;
 }
 
-// no CSS output for Foundation buttons component :)
+// no CSS output for Foundation buttons component
+// outlined hollow style for options / secondary actions
 button, .button {
   @include button();
   width: 100%;
@@ -42,7 +43,7 @@ button, .button {
   }
  }
 
-// blue + gold, action that changes page/etc
+// solid blue, primary action that saves change, etc
 .primary-button {
   background-color: $ucla-its-primary-button-color;
   color: $white;
@@ -53,9 +54,10 @@ button, .button {
   }
 }
 
-// button that cancels/clears changes
+// alert styled button that cancels/clears changes
 .cancel-button {
   color: $alert-color;
+  border: 1px solid $alert-color;
   &:hover {
     background-color: $alert-color;
     color: $white;
