@@ -27,6 +27,8 @@ Which will create a .gitmodules file containing
 	branch = develop
 ```
 
+Then run `npm start` to compile the documentation. When it finishes, a new browser window will open pointing to a BrowserSync server displaying the documentation.
+
 ## Testing
 
 Foundation has three kinds of tests: JavaScript, Sass, and visual regression. Refer to our [testing guide](https://github.com/zurb/foundation-sites/wiki/Testing-Guide) for more details.
