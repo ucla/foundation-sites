@@ -15,7 +15,7 @@ legend {
   color: $primary-color-safe;
 }
 
-input {
+input, select {
   font-weight: $global-weight-normal;
   @include breakpoint(multi-column) {
     max-width: 30rem;
