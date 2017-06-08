@@ -28,10 +28,9 @@
 /////////////////////////////////////////
 
 .message-fail {
-  background: repeating-linear-gradient(45deg, $alert-color-dark, $alert-color-dark ($global-spacing / 2), $alert-color-dark-alternate ($global-spacing / 2), $alert-color-dark-alternate $global-spacing);
-  color: $alert-color;
+  background: $alert-color;
   a {
-    color: $alert-color;
+    color: $ucla-white;
   }
   border-radius: $global-radius;
   padding: $global-spacing / 2;

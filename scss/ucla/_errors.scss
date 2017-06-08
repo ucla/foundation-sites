@@ -17,13 +17,8 @@
 	margin-top: 0;
 }
 
-.error-box {
-	background: repeating-linear-gradient(45deg, $alert-color-dark, $alert-color-dark ($global-spacing / 2), $alert-color-dark-alternate ($global-spacing / 2), $alert-color-dark-alternate $global-spacing);
-	@extend %error-base;
-}
-
-.error-box-solid {
-	background: $alert-color-dark;
+.error-box, .error-box-solid {
+	background: $alert-color;
 	@extend %error-base;
 }
 
