@@ -34,18 +34,18 @@ $ucla-anchor-hover: #1e4b87;
 $ucla-body-font-color: #333;
 
 // UCLA ITS Colors
-$ucla-its-primary: #347bad;
-$ucla-its-primary-alt: #1e4b87;
-$ucla-its-primary-light: #dde6ed;
-$ucla-its-secondary: #ffe800;
-$ucla-its-gray-dark:#292b2c;
-$ucla-its-gray: #464a4c;
-$ucla-its-gray-light: #636c72;
-$ucla-its-gray-lighter: #e8f2f9;
-$ucla-its-gray-lightest: #f7f7f9;
+$ucla-its-primary: #347bad; // used for headers and lead text
+$ucla-its-primary-alt: #1e4b87; // used for linked headers, alternate lead text, alpha list
+$ucla-its-primary-light: #dde6ed; // not used anywhere?
+$ucla-its-secondary: #ffe800; // used for links in side nav, header, footer
+$ucla-its-gray-dark:#292b2c; // used for text
+$ucla-its-gray: #464a4c; // not used anywhere?
+$ucla-its-gray-light: #636c72; // not used anywhere?
+$ucla-its-gray-lighter: #e8f2f9; // not used anywhere?
+$ucla-its-gray-lightest: #f7f7f9; // not used anywhere?
 $ucla-its-success: #58b95b;
 $ucla-its-info: #2b72a5;
-$ucla-its-warning: #555;
+$ucla-its-warning: #555; // also used as link color for
 $ucla-its-danger: #ce3635;
 
 $ucla-its-body-font-color: $ucla-its-gray-dark;
@@ -53,6 +53,32 @@ $ucla-its-link-color: #8237ff;
 $ucla-its-link-color-hover: #8237ff;
 $ucla-its-primary-button-color: #0d4d7f;
 $ucla-its-primary-button-color-hover: #3b89c1;
+
+// various one-off blues
+$ucla-its-table-header: #347cad;
+$ucla-its-sidebar-light-bg: #e8f2f9; // also used for table cells
+$ucla-its-nav: #0d4d7f;
+$ucla-its-header-global: #93d3eb;
+$ucla-its-header-global-link: #204e91;
+$ucla-its-header-bg: linear-gradient(to bottom, #003d6e 0%, #1d6092 100%);
+$ucla-its-footer-subheader: #adc1e5;
+$ucla-its-footer-top-bar: #2a72a5;
+$ucla-its-footer-bg: #2c4886; // also icons
+$ucla-its-nav-bg: #0d4d7f;
+$ucla-its-linked-header-hover: #225172;
+$ucla-its-info-border: #003d6e;
+$ucla-its-top-service-links-hover: #1f4b87;
+
+// various one-off grays
+$ucla-its-pre-text-bg: #f5f5f5;
+$ucla-its-article-hover-bg: #f9f9f9;
+$ucla-its-pre-text-border: #ccc;
+$ucla-its-pagination-gray: #ddd;
+$ucla-its-meta: #666;
+$ucla-its-label: #444;
+$ucla-its-hover-border-bottom: #eceeef;
+$ucla-its-top-service-links: #e4ecf2;
+
 
 // Fonts
 
