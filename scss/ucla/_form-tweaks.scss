@@ -40,7 +40,8 @@ button, .button {
   text-transform: uppercase;
   font-weight: $global-weight-bold;
   &:hover {
-    background: $ucla-its-primary-light;
+    color: $white;
+    background: $ucla-its-primary-button-color-hover;
   }
  }
 
