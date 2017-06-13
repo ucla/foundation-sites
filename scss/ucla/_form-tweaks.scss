@@ -35,11 +35,12 @@ button, .button {
   @include breakpoint(multi-column) {
     width: auto;
   }
+  color: $ucla-its-primary-alt;
   border: 1px solid $ucla-its-primary-button-color;
   text-transform: uppercase;
   font-weight: $global-weight-bold;
   &:hover {
-    color: $white;
+    background: $ucla-its-primary-light;
   }
  }
 
@@ -56,6 +57,7 @@ button, .button {
 
 // alert styled button that cancels/clears changes
 .cancel-button {
+  background-color: $white;
   color: $alert-color;
   border: 1px solid $alert-color;
   &:hover {
