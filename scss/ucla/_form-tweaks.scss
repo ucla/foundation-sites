@@ -32,6 +32,7 @@ button, .button {
   @include button();
   width: 100%;
   font-size: .875rem;
+  text-decoration: none;
   @include breakpoint(multi-column) {
     width: auto;
   }
