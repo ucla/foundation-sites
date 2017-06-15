@@ -24,6 +24,7 @@ input, select {
 
 button[disabled] {
   @include button-disabled;
+  cursor: not-allowed;
 }
 
 // no CSS output for Foundation buttons component
