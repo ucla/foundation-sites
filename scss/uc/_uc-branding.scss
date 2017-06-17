@@ -33,7 +33,7 @@ $ucla-black: #000;
 $ucla-anchor-hover: #1e4b87;
 $ucla-body-font-color: #333;
 
-// UCLA ITS Colors
+// UCLA ITS Brand Palette Colors
 $ucla-its-primary: #347bad; // used for headers and lead text
 $ucla-its-primary-alt: #1e4b87; // used for linked headers, alternate lead text, alpha list
 $ucla-its-primary-light: #dde6ed; // not used anywhere?
@@ -50,27 +50,32 @@ $ucla-its-danger: #ce3635;
 
 $ucla-its-link-color: #8237ff;
 $ucla-its-link-color-hover: #8237ff;
+$ucla-its-success-dark: #49984b;
+$ucla-its-danger-dark: #b4302f;
 
 // various one-off blues
 $ucla-its-primary-button-color: #0d4d7f; // icons have a transparency overlay darkening
 $ucla-its-primary-button-color-hover: #3b89c1; // icons have a transparency overlay darkening
-$ucla-its-table-header: #347cad; // typo I assume, see #347bad
+$ucla-its-table-header: #347cad; // typo? see #347bad
 $ucla-its-sidebar-light-bg: #e8f2f9; // also used for table cells
 $ucla-its-nav: #0d4d7f;
 $ucla-its-header-global: #93d3eb;
 $ucla-its-header-global-link: #204e91;
 $ucla-its-header-bg: linear-gradient(to bottom, #003d6e 0%, #1d6092 100%);
 $ucla-its-footer-subheader: #adc1e5;
-$ucla-its-footer-top-bar: #2a72a5;
+$ucla-its-footer-top-bar: #2a72a5; // typo? see #2b72a5;
 $ucla-its-footer-bg: #2c4886; // also icons
 $ucla-its-nav-bg: #0d4d7f;
 $ucla-its-linked-header-hover: #225172;
 $ucla-its-info-border: #003d6e;
 $ucla-its-top-service-links-hover: #1f4b87;
+$ucla-its-alert-border: #013d6e;
 
 // various one-off grays
 $ucla-its-label: #444;
 $ucla-its-meta: #666;
+$ucla-its-warning-light: #777;
+$placeholder-text: #999;
 $ucla-its-pre-text-border: #ccc;
 $ucla-its-pagination-gray: #ddd;
 $ucla-its-button-disabled: #eee;
