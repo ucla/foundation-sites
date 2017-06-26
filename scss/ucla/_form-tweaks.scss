@@ -51,6 +51,7 @@ button, .button {
 // solid blue, primary action that saves change, etc
 .primary-button {
   background-color: $ucla-its-primary-button-color;
+  border: 1px solid $ucla-its-primary-button-color;
   color: $white;
   border: none;
   &:hover {
