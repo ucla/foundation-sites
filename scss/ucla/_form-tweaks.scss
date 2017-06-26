@@ -42,9 +42,9 @@ button, .button {
   text-transform: uppercase;
   font-weight: $global-weight-bold;
   &:hover {
-    color: $white;
     background: $ucla-its-primary-button-color-hover;
     border: 1px solid $ucla-its-primary-button-color-hover;
+    color: $white;
   }
  }
 
@@ -55,6 +55,7 @@ button, .button {
   border: none;
   &:hover {
     background-color: $ucla-its-primary-button-color-hover;
+    border: 1px solid $ucla-its-primary-button-color-hover;
     color: $white;
   }
 }
