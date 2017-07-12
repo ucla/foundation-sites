@@ -40,7 +40,7 @@ button, .button {
   color: $ucla-its-primary-alt;
   border: 1px solid $ucla-its-primary-button-color;
   text-transform: uppercase;
-  &:hover {
+  &:hover, &:focus {
     background: $ucla-its-primary-button-color-hover;
     border: 1px solid $ucla-its-primary-button-color-hover;
     color: $white;
@@ -52,7 +52,7 @@ button, .button {
   background-color: $ucla-its-primary-button-color;
   border: 1px solid $ucla-its-primary-button-color;
   color: $white;
-  &:hover {
+  &:hover, &:focus {
     background-color: $ucla-its-primary-button-color-hover;
     border: 1px solid $ucla-its-primary-button-color-hover;
     color: $white;
@@ -64,7 +64,7 @@ button, .button {
   background-color: $white;
   color: $alert-color;
   border: 1px solid $alert-color;
-  &:hover {
+  &:hover, &:focus {
     background-color: $alert-color;
     border: 1px solid $alert-color;
     color: $white;
