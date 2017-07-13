@@ -1,6 +1,7 @@
 ---
 title: Sass
 description: Foundation is written in Sass, which allows us to make the codebase customizable and flexible.
+video: mYiyunVQdMY
 ---
 
 <div class="primary callout">
@@ -106,8 +107,9 @@ Our [starter projects](starter-projects.html) include the full list of imports, 
 @import 'foundation';
 
 @include foundation-global-styles;
-@include foundation-grid;
-@include foundation-flex-grid;
+@include foundation-xy-grid-classes;
+//@include foundation-grid;
+//@include foundation-flex-grid;
 @include foundation-flex-classes;
 @include foundation-typography;
 @include foundation-forms;

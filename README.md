@@ -1,5 +1,11 @@
 # [Foundation for Sites - Forked](http://foundation.zurb.com)
 
+[![Build Status](https://travis-ci.org/zurb/foundation-sites.svg?branch=develop)](https://travis-ci.org/zurb/foundation-sites)
+[![npm version](https://badge.fury.io/js/foundation-sites.svg)](https://badge.fury.io/js/foundation-sites)
+[![Bower version](https://badge.fury.io/bo/foundation-sites.svg)](https://badge.fury.io/bo/foundation-sites)
+[![Gem Version](https://badge.fury.io/rb/foundation-rails.svg)](https://badge.fury.io/rb/foundation-rails)
+[![CDNJS](https://img.shields.io/cdnjs/v/foundation.svg)](https://cdnjs.com/libraries/foundation)
+[![dependencies Status](https://david-dm.org/zurb/foundation-sites/status.svg)](https://david-dm.org/zurb/foundation-sites)
 ## Requirements
 
 Requires NodeJS to be installed on your machine. Works with version 4 and higher!
@@ -20,12 +26,14 @@ To get going with UCLA Branded Foundation in an existing project, run the follow
 
 Which will create a .gitmodules file containing
 
-```
+```bash
 [submodule "bower_components/foundation-sites"]
 	path = bower_components/foundation-sites
 	url = https://github.com/ucla/foundation-sites.git
 	branch = develop
 ```
+
+It'd be a little bit cleaner to use bowerlink.
 
 Then run `npm start` to compile the documentation. When it finishes, a new browser window will open pointing to a BrowserSync server displaying the documentation.
 
@@ -36,7 +44,7 @@ Foundation has three kinds of tests: JavaScript, Sass, and visual regression. Re
 These commands will run the various tests:
 
 - `npm run test:sass`
-- `npm run test:javascript`
+- `npm run test:javascript:phantomjs`
 - `npm run test:visual`
 
 ## Update
