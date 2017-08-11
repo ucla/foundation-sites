@@ -15,6 +15,11 @@ tags:
 flex: true
 ---
 
+<div class="callout training-callout">
+  <p>Off-canvas layouts are common and useful for mobile and desktop layouts. Be a navigation guru with our Foundation online webinar training. You’ll learn techniques for creating responsive navigations that work with any type of site. In addition to that you can learn tips and tricks and best practices for all of Foundation’s components.</p>
+  <a href="http://zurb.com/university/foundation-intro" target="_blank">Find out more about Foundation training classes →</a>
+</div>
+
 <div class="primary callout">
   <p>Good news! We've updated Off-canvas to offer more and better functionality. Another bonus is the markup is simplified. This new version applies to version 6.3+. We work hard to avoid breaking changes, so any markup updates are listed in the <a href="#migrating-from-versions-prior-to-v6-3">migration section</a> of this page.</p>
 </div>
@@ -333,15 +338,15 @@ If you need a simple bar to contain your hamburger icon/s and toggle the off-can
 
 ---
 
-#### Responsive Off-Canvas (Putting it all together)
+#### Off-Canvas (Putting it all together)
 
-For an example of off-canvas on small screens and Top Bar Menu with Dropdowns, check out this Building Block: http://zurb.com/building-blocks/top-bar-with-off-canvas
+For an example of off-canvas, checkout this top bar with off-canvas navigation and dropdowns for submenus building block: http://foundation.zurb.com/building-blocks/blocks/multilevel-offcanvas-menu.html
 
 ---
 
-## In-Canvas
+## In-Canvas to Off-Canvas
 
-If you want an element to be off-canvas only for specific sceen sizes and then move in-canvas you can use the new class <code>.in-canvas-for-[BREAKPOINT]</code> for this. Compared to the <a href="#reveal-on-larger-screens">Reveal on Larger Screens</a> feature it doesn't actually open the off-canvas for specific screen sizes but overrides the off-canvas styles so it behaves as an usual page element. This way you can place an element anywhere on the page and move it into off-canvas for e.g. small screens.
+With this feature you can have a standard page element move off-canvas at a particular breakpoint. Use the new class <code>.in-canvas-for-[BREAKPOINT]</code> for this. This differs from the <a href="#reveal-on-larger-screens">Reveal on Larger Screens</a> feature it doesn't actually open the off-canvas for specific screen sizes but overrides the off-canvas styles so it behaves as a regular page element. This way you can place an element anywhere on the page and move it into off-canvas for e.g. small screens.
 
 ```html_example
 <button type="button" class="button hide-for-large" data-toggle="inCanvasExample">
@@ -388,6 +393,28 @@ Advanced off-canvas users may use the new `contentId` option to bind an element 
 </div>
 
 <p>Enim, repudiandae officia dolores temporibus soluta, ipsa saepe tempora ipsum laudantium in mollitia quidem, nisi magni provident hic architecto rem culpa beatae.</p>
+```
+
+---
+
+## Off-canvas Sizes
+
+In v6.4.2 the type of the off-canvas size variables has changed from number to map. This lets you define breakpoint specific sizes instead of one value for all.
+The map may contain every key that is defined in `$breakpoint-classes`.
+
+<div class="warning callout">
+  Please note the sizes maps do currently not work perfectly for the reveal classes. If sizes are defined for medium and large, `.reveal-for-medium` will only consider the medium value. This is going to get fixed in a future release.
+</div>
+
+```scss
+$offcanvas-sizes: (
+  small: 250px,
+  medium: 350px,
+);
+$offcanvas-vertical-sizes: (
+  small: 250px,
+  medium: 350px,
+);
 ```
 
 ---
